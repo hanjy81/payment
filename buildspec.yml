@@ -48,7 +48,7 @@ phases:
               app: $_PROJECT_NAME
           spec:
             ports:
-              - port: 8080
+              - port: 80
                 targetPort: 8080
             selector:
               app: $_PROJECT_NAME
@@ -59,7 +59,7 @@ phases:
           kind: Deployment
           metadata:
             name: $_PROJECT_NAME
-            namespace: ingress-basic
+            namespace:: gr5
             labels:
               app: $_PROJECT_NAME
           spec:
