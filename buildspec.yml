@@ -59,7 +59,6 @@ phases:
           kind: Deployment
           metadata:
             name: $_PROJECT_NAME
-            namespace:: gr5
             labels:
               app: $_PROJECT_NAME
           spec:
